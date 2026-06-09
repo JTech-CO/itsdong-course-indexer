@@ -1,0 +1,35 @@
+# ───────────────────────────────────────────────────────────────
+#  수집 데이터는 절대 커밋하지 않습니다 (저장소는 '코드만' 공개).
+#  Generated/scraped data must NEVER be committed — code only.
+# ───────────────────────────────────────────────────────────────
+
+# HTML 캐시 / 다운로드 원본 (정적 웹페이지 docs/ 는 제외 대상 아님)
+_cache/
+/*.html
+
+# 크롤 결과(JSON)
+listings.json
+package_details.json
+lecture_details.json
+taxonomy.json
+*.tmp
+
+# 산출물(스프레드시트/CSV)
+*.xlsx
+*.xlsm
+*.csv
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# OS / 편집기
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp

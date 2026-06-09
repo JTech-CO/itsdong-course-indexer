@@ -1,0 +1,5 @@
+# 줄바꿈 정규화 (크로스플랫폼 일관성)
+* text=auto eol=lf
+*.xlsx binary
+*.png binary
+*.jpg binary
