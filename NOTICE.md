@@ -3,9 +3,10 @@
 > **English summary (full text in Korean below).**
 > This is an **unofficial, independent** open-source tool. It is **not affiliated with,
 > endorsed by, or connected to** itsdong.com / 아이티동스쿨 / (주)스마트동스쿨.
-> The repository ships **source code only — no scraped data of any kind.** Course
-> titles, curricula, prices, category names and all other content are fetched live
-> from the public website at run time and are **never stored in this repository.**
+> The repository ships **source code plus a small category menu — no course catalog
+> data.** Course titles, curricula, prices and instructors are **never stored**: the
+> Python tool fetches them live at run time, and the static web launcher only links
+> out to the official site by category.
 > The MIT license covers the **code only**; it grants no rights to the website's
 > data or brand. **You, the user, are solely responsible** for how you run this tool
 > and for complying with the target site's Terms of Service, `robots`, copyright,
@@ -20,10 +21,11 @@
 관련이 없는 비공식·독립 오픈소스 도구**입니다. 운영사의 후원·승인·제휴를 받지
 않았으며, 어떠한 공식 관계도 표방하지 않습니다.
 
-## 2. 저장소는 '코드만' 포함합니다 (Code only, no data)
-- 이 저장소에는 **수집한 강좌 데이터가 일절 포함되지 않습니다.**
-- 강좌 제목·차시 목차·가격·강사명·카테고리명 등 모든 콘텐츠는 **실행 시점에
-  공개 페이지에서 직접 가져오며**, 저장소나 커밋 이력에 저장되지 않습니다.
+## 2. 저장소는 코드와 카테고리 메뉴만 포함합니다 (No course catalog data)
+- 이 저장소에는 **강좌 카탈로그 데이터(제목·차시 목차·가격·강사명 등)가 일절 포함되지 않습니다.**
+- **파이썬 도구**는 그 콘텐츠를 실행 시점에 공개 페이지에서 직접 가져오고(저장 안 함),
+  **웹 런처(`docs/index.html`)**는 사이트의 **카테고리 메뉴 구조(분류명·링크)만** 담아
+  공식 페이지로 연결합니다 — 강좌 목록·목차·가격 등은 포함하지 않습니다.
 - 모든 생성물(`*.json`, `*.csv`, `*.xlsx`, `_cache/`)은 `.gitignore` 로 제외됩니다.
   **이 파일들을 커밋하지 마세요.**
 
