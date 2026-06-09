@@ -2,6 +2,11 @@
 
 > **아이티동스쿨(itsdong.com)의 강좌 카테고리를 한눈에 모아 공식 페이지로 바로 연결하고, 필요하면 전체 목록을 스프레드시트로 정리하는 비공식 오픈소스 도구**
 
+[![Live Demo](https://img.shields.io/badge/Live_Demo-jtech--co.github.io-217346?style=flat-square&logo=github)](https://jtech-co.github.io/itsdong-course-indexer/)
+[![License: MIT](https://img.shields.io/badge/License-MIT_(code)-blue?style=flat-square)](LICENSE)
+
+### 🌐 바로 사용하기 → **<https://jtech-co.github.io/itsdong-course-indexer/>**
+
 > ⚠️ **비공식 고지** — 본 프로젝트는 아이티동스쿨/(주)스마트동스쿨과 **무관한 비공식 도구**입니다.
 > 저장소에는 **강좌 카탈로그 데이터(제목·목차·가격 등)가 포함되지 않습니다.** 웹 런처는 카테고리 메뉴만
 > 담아 공식 페이지로 연결하고, 파이썬 도구의 결과물은 `.gitignore`로 제외됩니다. 라이선스(MIT)는
@@ -14,7 +19,8 @@
 정리**해 빠르게 탐색하도록 돕는 도구입니다. 두 부분으로 구성됩니다.
 
 **주요 기능**
-- **웹 링크 런처 (`docs/`)**: 카테고리를 **엑셀 창 형태**로 보여주고, 클릭하면 **공식 페이지로 바로 이동**합니다.
+- **웹 링크 런처 (`docs/`)** → **[바로 열기](https://jtech-co.github.io/itsdong-course-indexer/)**:
+  카테고리를 **엑셀 창 형태**로 보여주고, 클릭하면 **공식 페이지로 바로 이동**합니다.
   서버·프록시 없이 동작하는 순수 정적 페이지이며, **강좌 데이터를 저장하지 않습니다.**
 - **정리 도구 (Python)**: 필요 시 전체 강좌 목록·차시 목차·패키지 구성을 수집해 **Excel/CSV**로 만듭니다(개인용).
 
@@ -22,13 +28,12 @@
 
 - **Frontend**: Vanilla JS · 단일 HTML (의존성·빌드 없음)
 - **Data tooling**: Python 3, `requests`, `BeautifulSoup4`, `openpyxl`
-- **Deployment**: GitHub Pages (`/docs`)
+- **Deployment**: GitHub Pages (`/docs`) — <https://jtech-co.github.io/itsdong-course-indexer/>
 
 ## 3. 설치 및 실행 (Quick Start)
 
 ### A) 웹 링크 런처
-- 배포본: **`https://jtech-co.github.io/itsdong-course-indexer/`**
-  (Settings → Pages → `main` `/docs` 활성화 후)
+- **배포본(바로 사용)**: **<https://jtech-co.github.io/itsdong-course-indexer/>**
 - 로컬: `docs/index.html` 을 브라우저로 열면 됩니다.
 - 별도 설정이 없습니다. 시트 탭(대분류)에서 소분류 셀을 클릭하면 itsdong.com 공식 페이지가 새 탭으로 열립니다.
 
@@ -72,6 +77,7 @@ itsdong-course-indexer/
 
 ## 5. 정보 (Info)
 
+- **Live**: <https://jtech-co.github.io/itsdong-course-indexer/>
 - **License**: MIT — **코드에만** 적용됩니다. 데이터/브랜드 권리는 (주)스마트동스쿨에 있습니다([NOTICE.md](NOTICE.md)).
 - **Contact / 삭제 요청**: `jtech-bryan@proton.me`
 - 공개 재배포 전에는 운영사 동의 또는 전문가(변호사) 검토를 권장합니다.
